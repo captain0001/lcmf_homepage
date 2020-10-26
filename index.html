@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>LCMF</title>
-    <link type="text/css" href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
-    <link type="text/css" href="css/stylesheet.css" rel="stylesheet">
-    <script src="jquery-1.11.3.min.js"></script>
-	  <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
-    <script>
-      $(function(){
-          //.accordion1の中のp要素がクリックされたら
-        $('.accordion1 p').click(function(){
-          //クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
-          $(this).next('ul').slideToggle();
-        });
-      });
-    </script>
-  </head>
-  <body>
-  <center>
-  <img src="img/title-img.png" height="200px"><br>
-  バージョン３(こちらが最新です)
-  <ul class="accordion1">
-      <li>
-          <p class="ac1">最新情報</p>
-          <ul class="inner" border="1px">
-            <div class="article">
-              <iframe src="iframe1.html" width="90%" height="300px">最新情報</iframe>  
-            </div>
-          </ul>
-      </li>
-      <li>
-          <p class="ac2">クロスフェード動画一覧</p>
-          <ul class="inner">
-              <li class="content2-1" border="1px">
-                <div class="article">
-                  <iframe src="iframe3.html" width="90%" height="600px">クロスフェード動画を載せるよ</iframe>
-                </div>
-              </li><br>
-          </ul>
-      </li>
-  </ul>
-  <div class="site-old">
-    <input type="button" value="LCMFとは？" onClick="alert('サークルの概要ページに飛びます');location.href='iframe2.html';"><br>
-    ・以下、全部LCMFのサイトで、リンクです。<br>
-    <input type="button" value="HP②(2014年～2018年)" onClick="alert('前のサイト');location.href='http://lcmf.xyz';">
-    <input type="button" value="HP①(2014年)" onClick="alert('前の前のサイト');location.href='2014-2016/';"><br>
-  </div>
-  
-  <hr>
-  広告ゾーン
-  </center>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCMF-OfficialHomepage-</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/vender/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/js/vender/bootstrap.min.js">
+  <link rel="stylesheet" href="./assets/css/stylesheet.css">
+  <link rel="stylesheet" href="./assets/js/index.js">
+</head>
+<body>
+  <header>
+    <p>
+      <h1>
+        <img src="" alt="LCMF-OfficialHomepage-">
+      </h1>
+    </p>
+    <nav class="nav">
+      <ul class="menuList">
+        <li class="item">
+          <a href="#">MusicVideo</a>
+        </li>
+        <li class="item">
+          <a href="#">Member</a>
+        </li>
+        <li class="item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="jumbotron">
+        <video src="./assets/video/xfd/lcmf-001.mp4"></video>
+        <div class="buttonWrap">
+          <p class="prevButton">前</p>
+          <p class="nextButton">次</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <address>
+      <span>$copy;</span> 2020 LCMF Official Homepage
+    </address>
+  </footer>
+</body>
 </html>
