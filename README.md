@@ -1,2 +1,2 @@
-# lcmf_study002
-nuxt.jsの勉強のために作成
+# lcmf_homepage
+LCMFホームページ作成用
