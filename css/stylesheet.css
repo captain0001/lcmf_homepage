@@ -1,0 +1,24 @@
+.accordion1 {text-align: center;}
+.accordion1 .inner {display: none;}
+.accordion1 p{cursor: pointer; padding: 10px;}
+.accordion1 p.ac1{background: rgb(255, 161, 161); border: solid 1.5px; margin: 0%; position: relative; left: -25px;}
+.accordion1 p.ac2{background: rgb(255, 203, 182); border: solid 1.5px; margin: 0%; position: relative; left: -25px;}
+ul{
+    list-style: none;
+    
+}
+.article{
+    position: relative; left: -50px;
+    background-color: rgb(244, 155, 143);
+}
+body{
+    background-color: #ffcccc;
+}
+.site-old{
+    background-color: #eea8a8;
+    border: solid 1.5px;
+    padding: 5px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}

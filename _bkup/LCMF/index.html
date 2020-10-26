@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>-LCMF- OFFICIAL HOMEPAGE</title>
+    <link type="text/css" href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
+    <script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script>
+      $(function(){
+        $("#tabs").tabs({
+          ajaxOptions: {
+            error: function(xhr, status, index, anchor) {
+              $(anchor.hash).html("Something wrong happens.");
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+  <h2>-LCMF- OFFICIAL HOMEPAGE</h2>バージョン３(こちらが最新です)
+    <div id="tabs">
+      <ul>
+        <li><a href="#tab1">最新情報</a></li>
+        <li><a href="#tab2">LCMFについて</a></li>
+        <li><a href="#tab3">クロスフェード動画</a></li>
+      </ul>
+      <div id="tab1">
+        <iframe src="iframe1.html" width="90%" height="500px">最新情報を載せるよ</iframe>
+      </div>
+      <div id="tab2">
+        <iframe src="iframe2.html" width="90%" height="500px">このサークルについてを載せるよ</iframe>
+      </div>
+      <div id="tab3">
+        <iframe src="iframe3.html" width="90%" height="500px">クロスフェード動画を載せるよ</iframe>
+      </div>
+    </div>
+    <center>
+    	・以下、全部LCMFのサイトで、リンクです。<br>
+    	<input type="button" value="前のサイト" onClick="alert('前のサイト');location.href='http://lcmf.xyz';">
+    	<input type="button" value="前の前のサイト" onClick="alert('前の前のサイト');location.href='2014-2016/';"><br>
+    	<hr>広告ゾーン
+    </center>
+  </body>
+</html>
